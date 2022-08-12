@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 :root {
-    --green: rgb(73, 147, 147);
+    --green: rgb(98, 173, 173);
     --white: rgb(245, 249, 249);
     --light-gray: rgb(64, 67, 67);
     --purple: rgb(150, 70, 154);
@@ -13,15 +15,46 @@
     --black: rgb(15, 16, 16);
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    background-color: var(--purple);
+    color: var(--white);
+}
+
 li {
     list-style: none;
 }
 
-nav {
+#nav-bar {
     width: 100%;
     height: 15vh;
     display: flex;
     flex-direction: row;
     background-color: var(--green);
     color: var(--white);
+}
+
+#nav-bar p {
+    font-size: 2.5vw;
+    font-weight: 600;
+    margin-top: 3vh;
+    margin-left: 10vw;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    gap: 3vw;
+    margin-left: 12vw;
+    margin-top: 5vh;
+}
+
+#nav-bar button {
+    margin-left: 15vw;
 }
