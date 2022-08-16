@@ -10,18 +10,13 @@
     <script src="https://kit.fontawesome.com/9d6b460a5d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
 </head>
 <body>
-    <!--The Navigation Menu-->
-    <!--<nav id="nav-bar">
-        <p>Taste</p>
-        <ul id="menu">
-            <li>Home</li>
-            <li>Recipes</li>
-            <li>Books</li>
-        </ul>
-        <button class="btn">Subscribe</button>
-    </nav> -->
 
     <header class="navbar">
         <a href="#taste" id="logo">Jamie Oliver</a>
@@ -56,40 +51,49 @@
         </nav>
         <button id="subscribe">Subscribe</button>
     </header>
-
-    <!--Slideshow Gallery-->
-    <div class="container">
-        <!--Images with number text-->
-        <div class="mySlides">
-            <div class="numbertext">1 / 6</div>
-            <img src="./assets/images/gallery/alex-lvrs-aX_ljOOyWJY-lemonpie.jpg" alt="Lemon Pie">
+    <!--Gallery-->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#"><img src="./assets/images/gallery/alex-lvrs-aX_ljOOyWJY-lemonpie.jpg" alt="Lemon Pie"></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="./assets/images/gallery/megan-bucknall-edyYnPwpcXQ-tomatopasta.jpg" alt="Tomato Pasta"></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="./assets/images/gallery/monika-grabkowska-VVPC-DEBi2I-soup.jpg" alt="Soup"></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="./assets/images/gallery/monika-grabkowska-X6pX2KuHG8o-buns.jpg" alt="Buns"></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="./assets/images/gallery/taylor-kiser-EvoIiaIVRzU-salad.jpg" alt="Salad"></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="./assets/images/gallery/monika-grabkowska-eicwDsIM0_E-bread.jpg" alt="Bread"></a>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
+    </div>  
 
-        <div class="mySlides">
-            <div class="numbertext">2 / 6</div>
-            <img src="./assets/images/gallery/taylor-kiser-EvoIiaIVRzU-salad.jpg" alt="Salad">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">3 / 6</div>
-            <img src="./assets/images/gallery/monika-grabkowska-VVPC-DEBi2I-soup.jpg" alt="Soup">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">4 / 6</div>
-            <img src="./assets/images/gallery/sama-hosseini-wTBGTwHlf0c-pasta.jpg" alt="Pasta">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">5 / 6</div>
-            <img src="./assets/images/gallery/monika-grabkowska-X6pX2KuHG8o-buns.jpg" alt="Buns">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">5 / 6</div>
-            <img src="./assets/images/gallery/monika-grabkowska-eicwDsIM0_E-bread.jpg" alt="Bread">
-        </div>
+    <div>
+        <h2>Get Inspired</h2>
     </div>
-       
+
+    <script src="./assets/js/main.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+    </script>
 </body>
 </html>
